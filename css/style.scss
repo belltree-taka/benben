@@ -141,6 +141,7 @@
   }
   &--margin-LeftAuto{
     width: 406px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: 0;
   }
@@ -322,12 +323,13 @@
         border: dashed 1px $main-color;
     }
     &__BlogTitle{
-        width: 680px;
+        max-width: 100%;
         margin: auto;
         color: $main-color;
         font-size: 2.8rem;
         font-weight: 200;
         font-family: "Noto Sans JP";
+        padding: 0 50px;
     }
     &__image{
         width: 800px;
@@ -521,31 +523,38 @@
 }
 .QuestionContainer{
   width: 1000px;
-  margin: 0 auto 35px;
+  margin: 0 auto 50px;
   position: relative;
-  &__question{
-    display: inline-block;
-    color: $main-color;
-    font-size: 1.6rem;
-    font-family: "Noto Sans JP";
+  &__QuestionBox{
+    width: 100%;
+    height: 100%;
     &::before{
       display: inline-block;
       content: '';
+      position: absolute;
       background-image: url(../images/question_question_icon.svg);
       background-repeat: no-repeat;
       background-size: cover;
       width: 50px;
       height: 50px;
-      vertical-align: -15px;
-      margin-right: 15px;
     }
     &::after{
       display: block;
       content: '';
-      width: 1000px;
+      width: 100%;
       border: 1px solid $main-color;
       margin: 5px 0 30px;
     }
+  }
+  &__question{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    color: $main-color;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 1.6rem;
+    font-family: "Noto Sans JP";
   }
   &__PlusMinusButtonContainer{
     position: absolute;
@@ -583,29 +592,30 @@
   }
   &__AnswerContainer{
     display: none;
-    padding-top: 20px;
-    height: 100px;
+    height: 20px;
     position: relative;
   }
   &__answer{
     display: inline-block;
+    display: inline-block;
     color: $main-color;
     font-size: 1.6rem;
     font-family: "Noto Sans JP";
-    padding-left: 65px;
+    padding-left: 60px;
     position: relative;
-    height: 80px;
+    line-height: 2;
+    height: 10px;
     &::before{
       display: inline-block;
       content: '';
-      background-image: url(../images/question_answer_icon.png);
+      background-image: url(../images/question_answer_icon.svg);
       background-repeat: no-repeat;
       background-size: cover;
       width: 50px;
-      height: 50px;
+      height: 45px;
       position: absolute;
       left: 0;
-      top: -20%;
+      top: 0;
     }
   }
 }
@@ -639,7 +649,7 @@
     ::-webkit-scrollbar{
     width: 0;
    }
-
+   
    section{
     padding: 50px 0 25px;
    }
@@ -697,6 +707,7 @@
     display: block;
   }
   .MainVisualContainer{
+    max-width: 100%;
     height: 250px;
     &__MainVisual{
       margin-top: 45px;
@@ -707,7 +718,7 @@
     width: 87px;
     height: 250px;
     margin-top: 45px;
-    left: 100px;
+    left: 10%;
     &__text{
       font-size: 1.6rem;
       letter-spacing: 6px;
@@ -800,7 +811,7 @@
         background-size: cover;
         position: absolute;
         top: -5px;
-        left: 0;
+        left: -5px;
       }
     }
     &__menu{
@@ -948,10 +959,13 @@
     }
     &__BlogTitle{
       font-size: 1.8rem;
-      padding-left: 20px;
+      padding: 0 30px;
     }
     &__image{
       width: 100%;
+    }
+    &__description{
+      padding: 20px
     }
   }
   .SideMenu{
@@ -972,16 +986,39 @@
   }
   .QuestionContainer{
     width: 90%;
-    &__question{
-      font-size: 1.4rem;
-      &::after{
-        width: 90vw;
+    margin: 0 auto 30px;
+    &__QuestionBox{
+      &::before{
+        width: 25px;
+        height: 25px;
       }
+      &::after{
+        margin: 5px 0 10px;
+      }
+    }
+    &__question{
+      height: 25px;
+      line-height: 25px;
+      font-size: 1.4rem;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &__AnswerContainer{
+      height: 30px;
+      padding-top: 5px;
     }
     &__answer{
       font-size: 1.4rem;
+      padding-left: 30px;
+      line-height: 1.2;
+      &::before{
+        width: 25px;
+        height: 22px;
+      }
     }
     &__PlusMinusButton{
+      width: 20px;
+      height: 20px;
       &::before{
         width: 30px;
       }

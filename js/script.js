@@ -86,17 +86,6 @@ $(function(){
 		$('.OverlayNav').removeClass('active');
 		$('body').removeClass('ScrollLock');
 	});
-	$('.OverlayNav').on('click',function(){
-		var CurrentScrollY = $(window).scrollTop();
-
-		$('.OverlayNav').stop(true).animate({
-			'left': '-120%'
-		},500);
-		$('body').removeClass('fixed').css({
-			'top': -CurrentScrollY
-		});
-		$('body').removeClass('ScrollLock');
-	});
 	/*
 	Remove ScrollLock when the window is wider than 768px
 	This will prevent the scroll lock when the user makes the window width wider than 768px after opeining the overlay menu.

@@ -150,6 +150,7 @@
 
 .description--margin-LeftAuto {
   width: 406px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: 0;
 }
@@ -360,12 +361,13 @@
 }
 
 .BlogContainer__BlogTitle {
-  width: 680px;
+  max-width: 100%;
   margin: auto;
   color: #393F4C;
   font-size: 2.8rem;
   font-weight: 200;
   font-family: "Noto Sans JP";
+  padding: 0 50px;
 }
 
 .BlogContainer__image {
@@ -584,35 +586,43 @@
 
 .QuestionContainer {
   width: 1000px;
-  margin: 0 auto 35px;
+  margin: 0 auto 50px;
   position: relative;
 }
 
-.QuestionContainer__question {
-  display: inline-block;
-  color: #393F4C;
-  font-size: 1.6rem;
-  font-family: "Noto Sans JP";
+.QuestionContainer__QuestionBox {
+  width: 100%;
+  height: 100%;
 }
 
-.QuestionContainer__question::before {
+.QuestionContainer__QuestionBox::before {
   display: inline-block;
   content: '';
+  position: absolute;
   background-image: url(../images/question_question_icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50px;
   height: 50px;
-  vertical-align: -15px;
-  margin-right: 15px;
 }
 
-.QuestionContainer__question::after {
+.QuestionContainer__QuestionBox::after {
   display: block;
   content: '';
-  width: 1000px;
+  width: 100%;
   border: 1px solid #393F4C;
   margin: 5px 0 30px;
+}
+
+.QuestionContainer__question {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  color: #393F4C;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP";
 }
 
 .QuestionContainer__PlusMinusButtonContainer {
@@ -660,32 +670,33 @@
 
 .QuestionContainer__AnswerContainer {
   display: none;
-  padding-top: 20px;
-  height: 100px;
+  height: 20px;
   position: relative;
 }
 
 .QuestionContainer__answer {
   display: inline-block;
+  display: inline-block;
   color: #393F4C;
   font-size: 1.6rem;
   font-family: "Noto Sans JP";
-  padding-left: 65px;
+  padding-left: 60px;
   position: relative;
-  height: 80px;
+  line-height: 2;
+  height: 10px;
 }
 
 .QuestionContainer__answer::before {
   display: inline-block;
   content: '';
-  background-image: url(../images/question_answer_icon.png);
+  background-image: url(../images/question_answer_icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50px;
-  height: 50px;
+  height: 45px;
   position: absolute;
   left: 0;
-  top: -20%;
+  top: 0;
 }
 
 .open::before {
@@ -774,6 +785,7 @@
     display: block;
   }
   .MainVisualContainer {
+    max-width: 100%;
     height: 250px;
   }
   .MainVisualContainer__MainVisual {
@@ -784,7 +796,7 @@
     width: 87px;
     height: 250px;
     margin-top: 45px;
-    left: 100px;
+    left: 10%;
   }
   .TextBox__text {
     font-size: 1.6rem;
@@ -881,7 +893,7 @@
     background-size: cover;
     position: absolute;
     top: -5px;
-    left: 0;
+    left: -5px;
   }
   .OverlayNav__menu {
     width: 80%;
@@ -1021,10 +1033,13 @@
   }
   .BlogContainer__BlogTitle {
     font-size: 1.8rem;
-    padding-left: 20px;
+    padding: 0 30px;
   }
   .BlogContainer__image {
     width: 100%;
+  }
+  .BlogContainer__description {
+    padding: 20px;
   }
   .SideMenu {
     width: 90%;
@@ -1042,15 +1057,38 @@
   }
   .QuestionContainer {
     width: 90%;
+    margin: 0 auto 30px;
+  }
+  .QuestionContainer__QuestionBox::before {
+    width: 25px;
+    height: 25px;
+  }
+  .QuestionContainer__QuestionBox::after {
+    margin: 5px 0 10px;
   }
   .QuestionContainer__question {
+    height: 25px;
+    line-height: 25px;
     font-size: 1.4rem;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  .QuestionContainer__question::after {
-    width: 90vw;
+  .QuestionContainer__AnswerContainer {
+    height: 30px;
+    padding-top: 5px;
   }
   .QuestionContainer__answer {
     font-size: 1.4rem;
+    padding-left: 30px;
+    line-height: 1.2;
+  }
+  .QuestionContainer__answer::before {
+    width: 25px;
+    height: 22px;
+  }
+  .QuestionContainer__PlusMinusButton {
+    width: 20px;
+    height: 20px;
   }
   .QuestionContainer__PlusMinusButton::before {
     width: 30px;

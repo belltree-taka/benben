@@ -16,8 +16,7 @@ body {
   font-family: "Sawarabi Mincho" ,"", YuMincho, 'Yu Mincho', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100%;
+  /*max-width: 10%;*/
 }
 
 .ScrollLock {
@@ -297,7 +296,7 @@ header {
           backdrop-filter: blur(30px);
   position: absolute;
   top: 0;
-  left: 200px;
+  left: 20%;
 }
 
 .TextBox__text {
@@ -356,6 +355,8 @@ body.fixed {
   color: #fff;
   font-size: 1.6rem;
   letter-spacing: 1.5px;
+  width: 100%;
+  text-align: center;
   font-family: "Noto Sans JP";
   position: absolute;
   left: 50%;
