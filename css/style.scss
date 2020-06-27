@@ -1,0 +1,995 @@
+/* --------------------------------
+ * Variables
+ * -------------------------------- */
+ $main-color: #393F4C;
+ $sub-color: #836D1F;
+ $base-color: #EDE7CF;
+ $base-color2: #A3B7A5;
+ $accent-color: #D7003A;
+/* --------------------------------
+ * about section(index.html)
+ * -------------------------------- */
+.about{
+  width: 100%;
+  padding-top: 170px;
+}
+.SectionContainer{
+  &__AboutImage{
+    width: 1000px;
+    height: 445px;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px #909090;
+  }  
+}
+/* --------------------------------
+ * activity section(index.html)
+ * -------------------------------- */
+ .activitiy{
+   width: 100%;
+   background-color: $base-color2;
+ }
+ .SectionTitle{
+  &--margin-bottom75{
+    margin-bottom: 175px;
+  }
+ }
+ .DescriptionTitle{
+  &--margin-left25{
+    margin-left: 25px;
+  }
+ }
+ .description{
+  &--padding-35{
+    padding: 0 35px 0;
+  }
+ }
+ .ActivityCard{
+   width: 480px;
+   padding: 100px 0 25px;
+   box-shadow: 10px 10px 20px #909090;
+   background-color: #fff;
+   &__image{
+     width: 470px;
+     height: 175px;
+   }
+   &:nth-of-type(1){
+    border: 5px solid #4C524C;
+    position: relative;
+    &::before{
+      display: inline-block;
+      content: 'Web新聞';
+      text-align: center;
+      line-height: 240px;
+      color: #fff;
+      font-family: "Noto Sans JP";
+      font-size: 2rem;
+      font-weight: 200;
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      background-color: #4C524C;
+      background-image: url(../images/index_news_icon.svg);
+      background-repeat: no-repeat;
+      background-position: center 40%;
+      border-radius: 50%;
+    }
+   }
+   &:nth-of-type(2){
+    border: 5px solid $sub-color;
+    position: relative;
+    & .DescriptionTitle{
+      color: $sub-color;
+      &::after{
+        background-color: $sub-color;
+      }
+    }
+    &::before{
+      display: inline-block;
+      content: '定期イベント';
+      text-align: center;
+      line-height: 225px;
+      color: #fff;
+      font-family: "Noto Sans JP";
+      font-size: 1.8rem;
+      font-weight: 200;
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      background-color: $sub-color;
+      background-image: url(../images/index_event_icon.svg);
+      background-repeat: no-repeat;
+      background-position: center 35%;
+      border-radius: 50%;
+    }
+   }
+ }
+ /* --------------------------------
+  * contact section(index.html)
+  * -------------------------------- */
+.contact{
+  width: 100%;
+  background-image: url(../images/index_contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.SectionContainer{
+  &__GoogleMap{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 20px #909090;
+  }
+  &__GoogleMapIframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+.description{
+  &--margin-bottom40{
+    margin-bottom: 40px;
+  }
+  &--margin-LeftAuto{
+    width: 406px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+/* --------------------------------
+ * staff section(staff.html)
+ * -------------------------------- */
+.staff{
+  width: 100%;
+  padding-top: 170px;
+}
+.LargeCard{
+  font-size: 0;
+  position: relative;
+  margin-bottom: 95px;
+  &::before{
+    display: inline-block;
+    content: '会長　鈴木 勉';
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFF;
+    background-color: #879A87;
+    letter-spacing: 1.5;
+    padding-left: 50px;
+    height: 50px;
+    line-height: 50px;
+    width: 220px;
+    top: 30px;
+    left: -20px;
+  }
+  &::after{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: -20px;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px #4C524C;
+  }
+  &__ChairPersonImage{
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+  }
+  &__DescriptionContainer{
+    width: 1000px;
+    height: 197px;
+    background-color: #fff;
+    border: 5px solid $main-color;
+    padding: 40px 80px;
+    position: relative;
+    &::before{
+      display: inline-block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 30px solid $main-color;
+      border-right: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 30px solid $main-color;
+    }
+    &::after{
+      display: inline-block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top: 30px solid transparent;
+      border-right: 30px solid $main-color;
+      border-bottom: 30px solid $main-color;
+      border-left: 30px solid transparent;
+    }
+  }
+}
+.SmallCard{
+  width: 475px;
+  font-size: 0;
+  position: relative;
+  &::before{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $main-color;
+    background-color: #d0af4c;
+    letter-spacing: 1.5;
+    padding-left: 50px;
+    height: 50px;
+    line-height: 50px;
+    width: 220px;
+    top: 30px;
+    left: -20px;
+  }
+  &::after{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: -20px;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px #B1A88A;
+  }
+  &:nth-of-type(2){
+    margin-bottom: 180px;
+    &::before{
+      content: '副会長　タカ';
+    }
+  }
+  &:nth-of-type(3){
+    &::before{
+      content: '事務　アヤ';
+    }
+  }
+  &__image{
+    width: 475px;
+    height: 500px;
+    object-fit: cover;
+  }
+  &__DescriptionContainer{
+    border: 5px solid $sub-color;
+    background-color: #fff;
+    padding: 30px;
+    position: relative;
+    &::before{
+      display: inline-block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 25px solid $sub-color;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid transparent;
+      border-left: 25px solid $sub-color;
+    }
+    &::after{
+      display: inline-block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top: 25px solid transparent;
+      border-right: 25px solid $sub-color;
+      border-bottom: 25px solid $sub-color;
+      border-left: 25px solid transparent;
+    }
+  }
+}
+/* --------------------------------
+  * blog main(blog.html)
+  * -------------------------------- */
+  .blog{
+    width: 100%;
+    padding-top: 170px;
+    background-color: $base-color;
+}
+.wrapper{
+    width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main{
+    width: 800px;
+}
+.BlogContainer{
+    padding: 50px 0 30px;
+    background-color: #fff;
+    &::after{
+        display: block;
+        content: '';
+        width: 700px;
+        margin: auto;
+        border: dashed 1px $main-color;
+    }
+    &__BlogTitle{
+        width: 680px;
+        margin: auto;
+        color: $main-color;
+        font-size: 2.8rem;
+        font-weight: 200;
+        font-family: "Noto Sans JP";
+    }
+    &__image{
+        width: 800px;
+        object-fit: cover;
+    }
+    &__description{
+        padding: 50px;
+        font-family: "Not Sans JP";
+        line-height: 1.5;
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+    }
+    &__author{
+        font-size: 1.4rem;
+        color: $main-color;
+        font-family: "Noto Sans JP";
+        font-weight: 600;
+        text-align: right;
+        padding-right: 50px;
+        margin: 30px 0 30px;
+        &::before{
+          display: inline-block;
+          content: '';
+          width: 14px;
+          height: 14px;
+          background-image: url(../images/blog_post_icon.svg);
+          background-repeat: no-repeat;
+          vertical-align: -1px;
+          margin-right: 5px;
+        }
+    }
+}
+.DateContainer{
+    text-align: right;
+    margin: 19px 0 45px;
+    padding-right: 20px;
+  &__PostDate{
+      display: inline-block;
+      color: $main-color;
+      font-size: 1.4rem;
+      font-weight: 600;
+      font-family: "Noto Sans JP";
+      margin-right: 10px;
+      &::before{
+          display: inline-block;
+          content: '';
+          width: 14px;
+          height: 14px;
+          background-image: url(../images/blog_clock_icon.svg);
+          background-repeat: no-repeat;
+          color: $main-color;
+          vertical-align: -1px;
+          margin-right: 5px;
+      }
+  }
+  &__RenewDate{
+    color: $main-color;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: "Noto Sans JP";
+    &::before{
+        display: inline-block;
+        content: '';
+        width: 14px;
+        height: 14px;
+        background-image: url(../images/blog_reload_icon.svg);
+        background-repeat: no-repeat;
+        color: $main-color;
+        vertical-align: -1px;
+        margin-right: 5px;
+    }
+  }
+}
+/* --------------------------------
+* blog SideMenu(blog.html)
+* -------------------------------- */
+.SideMenu{
+    width: 300px;
+}
+.SideMenuContainer{
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  position: relative;
+    &:nth-of-type(2){
+        height: 100px;
+    }
+    &__title{
+        background-color: $main-color;
+        width: 300px;
+        height: 50px;
+        color: #fff;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 50px;
+    }
+    &__ImageWrapper{
+        text-align: center;
+        padding-top: 20px;
+        &::after{
+          display: block;
+          font-size: 1.6rem;
+          color: $main-color;
+          margin-top: 10px;
+          font-family: "Noto Sans JP";
+        }
+        &:nth-of-type(1){
+            &::after{                  
+                content: '会長';                  
+            }
+        }
+        &:nth-of-type(2){
+            &::after{
+              content: 'タカ';
+            }
+        }
+        &:nth-of-type(3){
+          &::after{
+            content: 'アヤ';
+          }
+      }
+    }
+    &__image{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        box-shadow: 10px 10px 10px #707070;
+        border-radius: 50%;
+    }
+    &__PostedMonthItem a{
+        color: #44617b;
+    }
+}
+.BlogSearch{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 260px;
+  margin: 15px auto 0;
+  text-align: center;
+  border: 1px solid $main-color;
+  & input[type=text]{
+      height: 30px;
+      width: 230px;
+      border: none;
+      &:focus{
+          outline: 0;
+      }
+  }
+  & input[type=submit]{
+      width: 20px;
+      height: 30px;
+      border-radius: 0%;
+      border: none;
+      background-image: url(/images/blog_search_icon.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: transparent;
+      &:focus{
+          outline: 0;
+      }
+  }
+}
+.SideMenuContainer{
+  &__PostedMonthList{
+      padding: 40px 25px 0;
+  }
+  &__PostedMonthItem{
+      list-style-type: none;
+      font-size: 1.6rem;
+      font-weight: 200;
+      font-family: "Noto Sans JP";
+      margin-bottom: 20px;
+      &::after{
+          display: block;
+          content: '';
+          border: dashed 1px $main-color;
+          margin-top: 10px;
+      }
+  }
+}
+/* --------------------------------
+ * question section(question.html)
+ * -------------------------------- */
+ .question{
+  width: 100%;
+  padding-top: 170px;
+  background-color: $base-color;
+}
+.QuestionContainer{
+  width: 1000px;
+  margin: 0 auto 35px;
+  position: relative;
+  &__question{
+    display: inline-block;
+    color: $main-color;
+    font-size: 1.6rem;
+    font-family: "Noto Sans JP";
+    &::before{
+      display: inline-block;
+      content: '';
+      background-image: url(../images/question_question_icon.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      vertical-align: -15px;
+      margin-right: 15px;
+    }
+    &::after{
+      display: block;
+      content: '';
+      width: 1000px;
+      border: 1px solid $main-color;
+      margin: 5px 0 30px;
+    }
+  }
+  &__PlusMinusButtonContainer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  &__PlusMinusButton{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 45px;
+      border: 1px solid $main-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+    &::after{
+      content: '';
+      display: inline-block;
+      height: 45px;
+      border: 1px solid $main-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(0deg);
+      transition: transform 0.3s ease;
+    }
+  }
+  &__AnswerContainer{
+    display: none;
+    padding-top: 20px;
+    height: 100px;
+    position: relative;
+  }
+  &__answer{
+    display: inline-block;
+    color: $main-color;
+    font-size: 1.6rem;
+    font-family: "Noto Sans JP";
+    padding-left: 65px;
+    position: relative;
+    height: 80px;
+    &::before{
+      display: inline-block;
+      content: '';
+      background-image: url(../images/question_answer_icon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 0;
+      top: -20%;
+    }
+  }
+}
+.open{
+  &::before{
+    content: '';
+      display: inline-block;
+      width: 45px;
+      border: 1px solid $main-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+  }
+  &::after{
+    content: '';
+      display: inline-block;
+      height: 45px;
+      border: 1px solid $main-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+/* --------------------------------
+ * Responsive Common
+ * -------------------------------- */
+ @media (max-width: 768px) {
+    ::-webkit-scrollbar{
+    width: 0;
+   }
+
+   section{
+    padding: 50px 0 25px;
+   }
+   .SectionContainer{
+     width: 90%;
+     margin: auto;
+   }
+  .SectionContainer{
+    &__AboutImage{
+    width: 100%;
+    height: auto;
+    }
+    &--column-two{
+      width: 90%;
+      margin: -50px auto 0;
+    }
+  }
+  .SectionTitle{
+    font-size: 2rem;
+    &::after{
+      width: 100px;
+      margin: 10px auto 50px;
+    }
+  }
+  .DescriptionTitle{
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    &::after{
+      margin-top: 6px;
+      width: 100px;
+    }
+  }
+  .description{
+    font-size: 1.4rem;
+  }
+  .header{
+    height: 45px;
+    padding-left: 35px;
+  }
+  .LogoTitle{
+    font-size: 2rem;
+    line-height: 45px;
+
+    &::before{
+     width: 25px;
+     height: 25px;
+     top: 50%;
+     left: -32px;
+    }
+  }
+  .HeaderNav{
+   display: none;
+  }
+  .HamBurgerIconContainer{
+    display: block;
+  }
+  .MainVisualContainer{
+    height: 250px;
+    &__MainVisual{
+      margin-top: 45px;
+      height: 250px;
+    }
+  }
+  .TextBox{
+    width: 87px;
+    height: 250px;
+    margin-top: 45px;
+    left: 100px;
+    &__text{
+      font-size: 1.6rem;
+      letter-spacing: 6px;
+      &:nth-of-type(2){
+        top: 36%;
+      }
+    }
+  }
+  .BackToTopButton {
+    bottom: 120px;
+    right: 5%;
+  }
+  .BackToTopButton__icon {
+    font-size: 5rem;
+  }
+  .BreadCrumb{
+    width: 100%;
+    padding-left: 10px;
+    margin: 60px auto -50px;
+    & a{
+      font-size: 1.5rem;
+    }
+    &__CurrentPage{
+      font-size: 1.5rem;
+    }
+  }
+  .footer{
+    height: 100px;
+  }
+  .copyright{
+    font-size: 1.1rem;
+    top: 70%;
+  }
+  .OverlayNav{
+    z-index: 2;
+    display: block;
+    background-color: rgba(57,63,76,0.9);
+    position: fixed;
+    top: 0;
+    left: -200%;
+    width: 100vw;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    &__CloseButton{
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      &::before{
+        display: block;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &::after{
+        display: block;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+    &__LogoTitle{
+      display: block;
+      margin: 65px auto 100px;
+      width: 210px;
+      color: #fff;
+      font-size: 4rem;
+      position: relative;
+      text-align: right;
+      &::before{
+        display: inline-block;
+        content: '';
+        width: 50px;
+        height: 50px;
+        background-image: url("../images/logo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -5px;
+        left: 0;
+      }
+    }
+    &__menu{
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    &__item{
+      margin-bottom: 55px;
+      & a{
+        font-size: 2rem;
+        color: #fff;
+      }
+    }
+  }
+  /* --------------------------------
+   * Responsive about section
+   * -------------------------------- */
+  .about{
+    width: 100%;
+    padding-top: 100px;
+  }
+  /* --------------------------------
+   * Responsive activity section
+   * -------------------------------- */
+  .activitiy{
+    background-color: $base-color;
+  }
+  .ActivityCard{
+    width: 100%;
+    &:nth-of-type(1){
+      margin-bottom: 110px;
+    }
+    &:nth-of-type(2){
+      margin-bottom: 50px;
+    }
+    &__image{
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* --------------------------------
+   * Responsive contact section
+   * -------------------------------- */
+   .SectionContainer{
+    &__GoogleMap{
+      padding-bottom: 60%;
+    }
+  }
+  /* --------------------------------
+   * Responsive staff section
+   * -------------------------------- */
+  .staff{
+    width: 100%;
+    padding-top: 100px;
+  }
+  .LargeCard{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    &__ChairPersonImage{
+      width: 100%;
+      height: auto;
+    }
+    &::before{
+      font-size: 1.4rem;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 30px;
+    }
+    &::after{
+      top: 60px;
+    }
+    &__DescriptionContainer{
+      width: 100%;
+      height: auto;
+      padding: 20px 40px;
+      &::before{
+        border-top: 15px solid $main-color;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $main-color;
+      }
+      &::after{
+        border-top: 15px solid transparent;
+        border-right: 15px solid $main-color;
+        border-bottom: 15px solid $main-color;
+        border-left: 15px solid transparent;
+
+      }
+    }
+  }
+  .SmallCard{
+    width: 100%;
+    &::before{
+      font-size: 1.4rem;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 30px;
+    }
+    &::after{
+      top: 60px;
+    }
+    &__image{
+      width: 100%;
+      height: auto;
+    }
+    &:nth-of-type(2){
+      margin-bottom: 50px;
+    }
+    &__DescriptionContainer{
+      &::before{
+        border-top: 15px solid $sub-color;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $sub-color;
+      }
+      &::after{
+        border-top: 15px solid transparent;
+        border-right: 15px solid $sub-color;
+        border-bottom: 15px solid $sub-color;
+        border-left: 15px solid transparent;
+      }
+    }
+  }
+  /* --------------------------------
+   * Responsive blog section
+   * -------------------------------- */
+  .blog{
+    width: 100%;
+    padding-top: 100px;
+  }
+  .wrapper{
+    width: 90%;
+  }
+  .main{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .BlogContainer{
+    &::after{
+      width: 100%;
+    }
+    &__BlogTitle{
+      font-size: 1.8rem;
+      padding-left: 20px;
+    }
+    &__image{
+      width: 100%;
+    }
+  }
+  .SideMenu{
+    width: 90%;
+    margin: auto;
+  }
+  .SideMenuContainer{
+    &__title{
+      width: 100%;
+    }
+  }
+  /* --------------------------------
+   * Responsive question section
+   * -------------------------------- */
+  .question{
+    width: 100%;
+    padding-top: 100px;
+  }
+  .QuestionContainer{
+    width: 90%;
+    &__question{
+      font-size: 1.4rem;
+      &::after{
+        width: 90vw;
+      }
+    }
+    &__answer{
+      font-size: 1.4rem;
+    }
+    &__PlusMinusButton{
+      &::before{
+        width: 30px;
+      }
+      &::after{
+        height: 30px;
+      }
+    }
+  }
+}
+   
+

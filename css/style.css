@@ -1,0 +1,1062 @@
+@charset "UTF-8";
+/* --------------------------------
+ * Variables
+ * -------------------------------- */
+/* --------------------------------
+ * about section(index.html)
+ * -------------------------------- */
+.about {
+  width: 100%;
+  padding-top: 170px;
+}
+
+.SectionContainer__AboutImage {
+  width: 1000px;
+  height: 445px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px 20px #909090;
+          box-shadow: 10px 10px 20px #909090;
+}
+
+/* --------------------------------
+ * activity section(index.html)
+ * -------------------------------- */
+.activitiy {
+  width: 100%;
+  background-color: #A3B7A5;
+}
+
+.SectionTitle--margin-bottom75 {
+  margin-bottom: 175px;
+}
+
+.DescriptionTitle--margin-left25 {
+  margin-left: 25px;
+}
+
+.description--padding-35 {
+  padding: 0 35px 0;
+}
+
+.ActivityCard {
+  width: 480px;
+  padding: 100px 0 25px;
+  -webkit-box-shadow: 10px 10px 20px #909090;
+          box-shadow: 10px 10px 20px #909090;
+  background-color: #fff;
+}
+
+.ActivityCard__image {
+  width: 470px;
+  height: 175px;
+}
+
+.ActivityCard:nth-of-type(1) {
+  border: 5px solid #4C524C;
+  position: relative;
+}
+
+.ActivityCard:nth-of-type(1)::before {
+  display: inline-block;
+  content: 'Web新聞';
+  text-align: center;
+  line-height: 240px;
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-size: 2rem;
+  font-weight: 200;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background-color: #4C524C;
+  background-image: url(../images/index_news_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  border-radius: 50%;
+}
+
+.ActivityCard:nth-of-type(2) {
+  border: 5px solid #836D1F;
+  position: relative;
+}
+
+.ActivityCard:nth-of-type(2) .DescriptionTitle {
+  color: #836D1F;
+}
+
+.ActivityCard:nth-of-type(2) .DescriptionTitle::after {
+  background-color: #836D1F;
+}
+
+.ActivityCard:nth-of-type(2)::before {
+  display: inline-block;
+  content: '定期イベント';
+  text-align: center;
+  line-height: 225px;
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-size: 1.8rem;
+  font-weight: 200;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background-color: #836D1F;
+  background-image: url(../images/index_event_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  border-radius: 50%;
+}
+
+/* --------------------------------
+  * contact section(index.html)
+  * -------------------------------- */
+.contact {
+  width: 100%;
+  background-image: url(../images/index_contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.SectionContainer__GoogleMap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 10px 10px 20px #909090;
+          box-shadow: 10px 10px 20px #909090;
+}
+
+.SectionContainer__GoogleMapIframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.description--margin-bottom40 {
+  margin-bottom: 40px;
+}
+
+.description--margin-LeftAuto {
+  width: 406px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* --------------------------------
+ * staff section(staff.html)
+ * -------------------------------- */
+.staff {
+  width: 100%;
+  padding-top: 170px;
+}
+
+.LargeCard {
+  font-size: 0;
+  position: relative;
+  margin-bottom: 95px;
+}
+
+.LargeCard::before {
+  display: inline-block;
+  content: '会長　鈴木 勉';
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #FFF;
+  background-color: #879A87;
+  letter-spacing: 1.5;
+  padding-left: 50px;
+  height: 50px;
+  line-height: 50px;
+  width: 220px;
+  top: 30px;
+  left: -20px;
+}
+
+.LargeCard::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: -20px;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #4C524C;
+}
+
+.LargeCard__ChairPersonImage {
+  width: 1000px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.LargeCard__DescriptionContainer {
+  width: 1000px;
+  height: 197px;
+  background-color: #fff;
+  border: 5px solid #393F4C;
+  padding: 40px 80px;
+  position: relative;
+}
+
+.LargeCard__DescriptionContainer::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 30px solid #393F4C;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #393F4C;
+}
+
+.LargeCard__DescriptionContainer::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 30px solid transparent;
+  border-right: 30px solid #393F4C;
+  border-bottom: 30px solid #393F4C;
+  border-left: 30px solid transparent;
+}
+
+.SmallCard {
+  width: 475px;
+  font-size: 0;
+  position: relative;
+}
+
+.SmallCard::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #393F4C;
+  background-color: #d0af4c;
+  letter-spacing: 1.5;
+  padding-left: 50px;
+  height: 50px;
+  line-height: 50px;
+  width: 220px;
+  top: 30px;
+  left: -20px;
+}
+
+.SmallCard::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: -20px;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px #B1A88A;
+}
+
+.SmallCard:nth-of-type(2) {
+  margin-bottom: 180px;
+}
+
+.SmallCard:nth-of-type(2)::before {
+  content: '副会長　タカ';
+}
+
+.SmallCard:nth-of-type(3)::before {
+  content: '事務　アヤ';
+}
+
+.SmallCard__image {
+  width: 475px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.SmallCard__DescriptionContainer {
+  border: 5px solid #836D1F;
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+.SmallCard__DescriptionContainer::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 25px solid #836D1F;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #836D1F;
+}
+
+.SmallCard__DescriptionContainer::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 25px solid transparent;
+  border-right: 25px solid #836D1F;
+  border-bottom: 25px solid #836D1F;
+  border-left: 25px solid transparent;
+}
+
+/* --------------------------------
+  * blog main(blog.html)
+  * -------------------------------- */
+.blog {
+  width: 100%;
+  padding-top: 170px;
+  background-color: #EDE7CF;
+}
+
+.wrapper {
+  width: 1150px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main {
+  width: 800px;
+}
+
+.BlogContainer {
+  padding: 50px 0 30px;
+  background-color: #fff;
+}
+
+.BlogContainer::after {
+  display: block;
+  content: '';
+  width: 700px;
+  margin: auto;
+  border: dashed 1px #393F4C;
+}
+
+.BlogContainer__BlogTitle {
+  width: 680px;
+  margin: auto;
+  color: #393F4C;
+  font-size: 2.8rem;
+  font-weight: 200;
+  font-family: "Noto Sans JP";
+}
+
+.BlogContainer__image {
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.BlogContainer__description {
+  padding: 50px;
+  font-family: "Not Sans JP";
+  line-height: 1.5;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
+}
+
+.BlogContainer__author {
+  font-size: 1.4rem;
+  color: #393F4C;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  text-align: right;
+  padding-right: 50px;
+  margin: 30px 0 30px;
+}
+
+.BlogContainer__author::before {
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/blog_post_icon.svg);
+  background-repeat: no-repeat;
+  vertical-align: -1px;
+  margin-right: 5px;
+}
+
+.DateContainer {
+  text-align: right;
+  margin: 19px 0 45px;
+  padding-right: 20px;
+}
+
+.DateContainer__PostDate {
+  display: inline-block;
+  color: #393F4C;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Noto Sans JP";
+  margin-right: 10px;
+}
+
+.DateContainer__PostDate::before {
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/blog_clock_icon.svg);
+  background-repeat: no-repeat;
+  color: #393F4C;
+  vertical-align: -1px;
+  margin-right: 5px;
+}
+
+.DateContainer__RenewDate {
+  color: #393F4C;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Noto Sans JP";
+}
+
+.DateContainer__RenewDate::before {
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/blog_reload_icon.svg);
+  background-repeat: no-repeat;
+  color: #393F4C;
+  vertical-align: -1px;
+  margin-right: 5px;
+}
+
+/* --------------------------------
+* blog SideMenu(blog.html)
+* -------------------------------- */
+.SideMenu {
+  width: 300px;
+}
+
+.SideMenuContainer {
+  background-color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.SideMenuContainer:nth-of-type(2) {
+  height: 100px;
+}
+
+.SideMenuContainer__title {
+  background-color: #393F4C;
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 50px;
+}
+
+.SideMenuContainer__ImageWrapper {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.SideMenuContainer__ImageWrapper::after {
+  display: block;
+  font-size: 1.6rem;
+  color: #393F4C;
+  margin-top: 10px;
+  font-family: "Noto Sans JP";
+}
+
+.SideMenuContainer__ImageWrapper:nth-of-type(1)::after {
+  content: '会長';
+}
+
+.SideMenuContainer__ImageWrapper:nth-of-type(2)::after {
+  content: 'タカ';
+}
+
+.SideMenuContainer__ImageWrapper:nth-of-type(3)::after {
+  content: 'アヤ';
+}
+
+.SideMenuContainer__image {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 10px 10px 10px #707070;
+          box-shadow: 10px 10px 10px #707070;
+  border-radius: 50%;
+}
+
+.SideMenuContainer__PostedMonthItem a {
+  color: #44617b;
+}
+
+.BlogSearch {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 260px;
+  margin: 15px auto 0;
+  text-align: center;
+  border: 1px solid #393F4C;
+}
+
+.BlogSearch input[type=text] {
+  height: 30px;
+  width: 230px;
+  border: none;
+}
+
+.BlogSearch input[type=text]:focus {
+  outline: 0;
+}
+
+.BlogSearch input[type=submit] {
+  width: 20px;
+  height: 30px;
+  border-radius: 0%;
+  border: none;
+  background-image: url(/images/blog_search_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+.BlogSearch input[type=submit]:focus {
+  outline: 0;
+}
+
+.SideMenuContainer__PostedMonthList {
+  padding: 40px 25px 0;
+}
+
+.SideMenuContainer__PostedMonthItem {
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: "Noto Sans JP";
+  margin-bottom: 20px;
+}
+
+.SideMenuContainer__PostedMonthItem::after {
+  display: block;
+  content: '';
+  border: dashed 1px #393F4C;
+  margin-top: 10px;
+}
+
+/* --------------------------------
+ * question section(question.html)
+ * -------------------------------- */
+.question {
+  width: 100%;
+  padding-top: 170px;
+  background-color: #EDE7CF;
+}
+
+.QuestionContainer {
+  width: 1000px;
+  margin: 0 auto 35px;
+  position: relative;
+}
+
+.QuestionContainer__question {
+  display: inline-block;
+  color: #393F4C;
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP";
+}
+
+.QuestionContainer__question::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/question_question_icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  vertical-align: -15px;
+  margin-right: 15px;
+}
+
+.QuestionContainer__question::after {
+  display: block;
+  content: '';
+  width: 1000px;
+  border: 1px solid #393F4C;
+  margin: 5px 0 30px;
+}
+
+.QuestionContainer__PlusMinusButtonContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.QuestionContainer__PlusMinusButton {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.QuestionContainer__PlusMinusButton::before {
+  content: '';
+  display: inline-block;
+  width: 45px;
+  border: 1px solid #393F4C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.QuestionContainer__PlusMinusButton::after {
+  content: '';
+  display: inline-block;
+  height: 45px;
+  border: 1px solid #393F4C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.QuestionContainer__AnswerContainer {
+  display: none;
+  padding-top: 20px;
+  height: 100px;
+  position: relative;
+}
+
+.QuestionContainer__answer {
+  display: inline-block;
+  color: #393F4C;
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP";
+  padding-left: 65px;
+  position: relative;
+  height: 80px;
+}
+
+.QuestionContainer__answer::before {
+  display: inline-block;
+  content: '';
+  background-image: url(../images/question_answer_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: -20%;
+}
+
+.open::before {
+  content: '';
+  display: inline-block;
+  width: 45px;
+  border: 1px solid #393F4C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.open::after {
+  content: '';
+  display: inline-block;
+  height: 45px;
+  border: 1px solid #393F4C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* --------------------------------
+ * Responsive Common
+ * -------------------------------- */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  section {
+    padding: 50px 0 25px;
+  }
+  .SectionContainer {
+    width: 90%;
+    margin: auto;
+  }
+  .SectionContainer__AboutImage {
+    width: 100%;
+    height: auto;
+  }
+  .SectionContainer--column-two {
+    width: 90%;
+    margin: -50px auto 0;
+  }
+  .SectionTitle {
+    font-size: 2rem;
+  }
+  .SectionTitle::after {
+    width: 100px;
+    margin: 10px auto 50px;
+  }
+  .DescriptionTitle {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+  }
+  .DescriptionTitle::after {
+    margin-top: 6px;
+    width: 100px;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+  .header {
+    height: 45px;
+    padding-left: 35px;
+  }
+  .LogoTitle {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+  .LogoTitle::before {
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    left: -32px;
+  }
+  .HeaderNav {
+    display: none;
+  }
+  .HamBurgerIconContainer {
+    display: block;
+  }
+  .MainVisualContainer {
+    height: 250px;
+  }
+  .MainVisualContainer__MainVisual {
+    margin-top: 45px;
+    height: 250px;
+  }
+  .TextBox {
+    width: 87px;
+    height: 250px;
+    margin-top: 45px;
+    left: 100px;
+  }
+  .TextBox__text {
+    font-size: 1.6rem;
+    letter-spacing: 6px;
+  }
+  .TextBox__text:nth-of-type(2) {
+    top: 36%;
+  }
+  .BackToTopButton {
+    bottom: 120px;
+    right: 5%;
+  }
+  .BackToTopButton__icon {
+    font-size: 5rem;
+  }
+  .BreadCrumb {
+    width: 100%;
+    padding-left: 10px;
+    margin: 60px auto -50px;
+  }
+  .BreadCrumb a {
+    font-size: 1.5rem;
+  }
+  .BreadCrumb__CurrentPage {
+    font-size: 1.5rem;
+  }
+  .footer {
+    height: 100px;
+  }
+  .copyright {
+    font-size: 1.1rem;
+    top: 70%;
+  }
+  .OverlayNav {
+    z-index: 2;
+    display: block;
+    background-color: rgba(57, 63, 76, 0.9);
+    position: fixed;
+    top: 0;
+    left: -200%;
+    width: 100vw;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .OverlayNav__CloseButton {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .OverlayNav__CloseButton::before {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .OverlayNav__CloseButton::after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .OverlayNav__LogoTitle {
+    display: block;
+    margin: 65px auto 100px;
+    width: 210px;
+    color: #fff;
+    font-size: 4rem;
+    position: relative;
+    text-align: right;
+  }
+  .OverlayNav__LogoTitle::before {
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }
+  .OverlayNav__menu {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .OverlayNav__item {
+    margin-bottom: 55px;
+  }
+  .OverlayNav__item a {
+    font-size: 2rem;
+    color: #fff;
+  }
+  /* --------------------------------
+   * Responsive about section
+   * -------------------------------- */
+  .about {
+    width: 100%;
+    padding-top: 100px;
+  }
+  /* --------------------------------
+   * Responsive activity section
+   * -------------------------------- */
+  .activitiy {
+    background-color: #EDE7CF;
+  }
+  .ActivityCard {
+    width: 100%;
+  }
+  .ActivityCard:nth-of-type(1) {
+    margin-bottom: 110px;
+  }
+  .ActivityCard:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+  .ActivityCard__image {
+    width: 100%;
+    height: auto;
+  }
+  /* --------------------------------
+   * Responsive contact section
+   * -------------------------------- */
+  .SectionContainer__GoogleMap {
+    padding-bottom: 60%;
+  }
+  /* --------------------------------
+   * Responsive staff section
+   * -------------------------------- */
+  .staff {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .LargeCard {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .LargeCard__ChairPersonImage {
+    width: 100%;
+    height: auto;
+  }
+  .LargeCard::before {
+    font-size: 1.4rem;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+  }
+  .LargeCard::after {
+    top: 60px;
+  }
+  .LargeCard__DescriptionContainer {
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+  }
+  .LargeCard__DescriptionContainer::before {
+    border-top: 15px solid #393F4C;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #393F4C;
+  }
+  .LargeCard__DescriptionContainer::after {
+    border-top: 15px solid transparent;
+    border-right: 15px solid #393F4C;
+    border-bottom: 15px solid #393F4C;
+    border-left: 15px solid transparent;
+  }
+  .SmallCard {
+    width: 100%;
+  }
+  .SmallCard::before {
+    font-size: 1.4rem;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+  }
+  .SmallCard::after {
+    top: 60px;
+  }
+  .SmallCard__image {
+    width: 100%;
+    height: auto;
+  }
+  .SmallCard:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+  .SmallCard__DescriptionContainer::before {
+    border-top: 15px solid #836D1F;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #836D1F;
+  }
+  .SmallCard__DescriptionContainer::after {
+    border-top: 15px solid transparent;
+    border-right: 15px solid #836D1F;
+    border-bottom: 15px solid #836D1F;
+    border-left: 15px solid transparent;
+  }
+  /* --------------------------------
+   * Responsive blog section
+   * -------------------------------- */
+  .blog {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  .main {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .BlogContainer::after {
+    width: 100%;
+  }
+  .BlogContainer__BlogTitle {
+    font-size: 1.8rem;
+    padding-left: 20px;
+  }
+  .BlogContainer__image {
+    width: 100%;
+  }
+  .SideMenu {
+    width: 90%;
+    margin: auto;
+  }
+  .SideMenuContainer__title {
+    width: 100%;
+  }
+  /* --------------------------------
+   * Responsive question section
+   * -------------------------------- */
+  .question {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .QuestionContainer {
+    width: 90%;
+  }
+  .QuestionContainer__question {
+    font-size: 1.4rem;
+  }
+  .QuestionContainer__question::after {
+    width: 90vw;
+  }
+  .QuestionContainer__answer {
+    font-size: 1.4rem;
+  }
+  .QuestionContainer__PlusMinusButton::before {
+    width: 30px;
+  }
+  .QuestionContainer__PlusMinusButton::after {
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
