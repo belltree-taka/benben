@@ -16,7 +16,7 @@ body {
   font-family: "Sawarabi Mincho" ,"", YuMincho, 'Yu Mincho', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*max-width: 10%;*/
+  max-width: 50%;
 }
 
 .ScrollLock {

@@ -725,14 +725,44 @@
 }
 
 /* --------------------------------
- * Responsive Common
+ * Responive Break Point(1150px)
  * -------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
+  .wrapper {
+    width: 1000px;
+  }
+  .main {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .SideMenu {
+    margin: auto;
+    width: 800px;
+  }
+  .SideMenuContainer__title {
+    width: 800px;
+  }
+  .SideMenuContainer__ImageBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .SideMenuContainer__image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* --------------------------------
+ * Responive Break Point(1000px)
+ * -------------------------------- */
+@media (max-width: 1000px) {
   ::-webkit-scrollbar {
     width: 0;
-  }
-  section {
-    padding: 50px 0 25px;
   }
   .SectionContainer {
     width: 90%;
@@ -745,6 +775,202 @@
   .SectionContainer--column-two {
     width: 90%;
     margin: -50px auto 0;
+  }
+  .BreadCrumb {
+    padding-left: 30px;
+  }
+  .BackToTopButton__icon {
+    font-size: 7rem;
+  }
+  .footer {
+    height: 120px;
+  }
+  .copyright {
+    font-size: 1.3rem;
+    top: 70%;
+  }
+  /* --------------------------------
+   * Responive Break Point(1000px)
+   * activity section
+   * -------------------------------- */
+  .ActivityCard {
+    width: 100%;
+  }
+  .ActivityCard:nth-of-type(1) {
+    margin-bottom: 110px;
+  }
+  .ActivityCard:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+  .ActivityCard__image {
+    width: 100%;
+    height: auto;
+  }
+  /* --------------------------------
+   * Responive Break Point(1000px)
+   * staff section
+   * -------------------------------- */
+  .LargeCard {
+    margin: 50px auto 0;
+    width: 100%;
+  }
+  .LargeCard__ChairPersonImage {
+    width: 100%;
+    height: auto;
+  }
+  .LargeCard::before {
+    font-size: 1.4rem;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+  }
+  .LargeCard::after {
+    top: 60px;
+  }
+  .LargeCard__DescriptionContainer {
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+  }
+  .LargeCard__DescriptionContainer::before {
+    border-top: 15px solid #393F4C;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #393F4C;
+  }
+  .LargeCard__DescriptionContainer::after {
+    border-top: 15px solid transparent;
+    border-right: 15px solid #393F4C;
+    border-bottom: 15px solid #393F4C;
+    border-left: 15px solid transparent;
+  }
+  .SmallCard {
+    width: 100%;
+    margin: auto;
+  }
+  .SmallCard::before {
+    font-size: 1.4rem;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+  }
+  .SmallCard::after {
+    top: 60px;
+  }
+  .SmallCard__image {
+    width: 100%;
+    height: auto;
+  }
+  .SmallCard:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+  .SmallCard__DescriptionContainer::before {
+    border-top: 15px solid #836D1F;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #836D1F;
+  }
+  .SmallCard__DescriptionContainer::after {
+    border-top: 15px solid transparent;
+    border-right: 15px solid #836D1F;
+    border-bottom: 15px solid #836D1F;
+    border-left: 15px solid transparent;
+  }
+  /* --------------------------------
+   * Responive Break Point(1000px)
+   * blog section
+   * -------------------------------- */
+  .wrapper {
+    width: 90%;
+  }
+  .main {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .BlogContainer::after {
+    width: 100%;
+  }
+  .BlogContainer__BlogTitle {
+    font-size: 1.8rem;
+    padding: 0 30px;
+  }
+  .BlogContainer__image {
+    width: 100%;
+  }
+  .BlogContainer__description {
+    padding: 20px;
+  }
+  .SideMenu {
+    width: 90%;
+    margin: auto;
+  }
+  .SideMenuContainer__title {
+    width: 100%;
+  }
+  .SideMenuContainer__ImageBox {
+    display: unset;
+  }
+  .SideMenuContainer__image {
+    width: 200px;
+    height: 200px;
+  }
+  /* --------------------------------
+   * Responive Break Point(1000px)
+   * question section
+   * -------------------------------- */
+  .QuestionContainer {
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  .QuestionContainer__QuestionBox::before {
+    width: 25px;
+    height: 25px;
+  }
+  .QuestionContainer__QuestionBox::after {
+    margin: 5px 0 10px;
+  }
+  .QuestionContainer__question {
+    height: 25px;
+    line-height: 25px;
+    font-size: 1.4rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .QuestionContainer__AnswerContainer {
+    height: 30px;
+    padding-top: 5px;
+  }
+  .QuestionContainer__answer {
+    font-size: 1.4rem;
+    padding-left: 30px;
+    line-height: 1.2;
+  }
+  .QuestionContainer__answer::before {
+    width: 25px;
+    height: 22px;
+  }
+  .QuestionContainer__PlusMinusButton {
+    width: 20px;
+    height: 20px;
+  }
+  .QuestionContainer__PlusMinusButton::before {
+    width: 30px;
+  }
+  .QuestionContainer__PlusMinusButton::after {
+    height: 30px;
+  }
+}
+
+/* --------------------------------
+ * Responive Break Point(768px)
+ * Common
+ * -------------------------------- */
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0 25px;
   }
   .SectionTitle {
     font-size: 2rem;
@@ -822,9 +1048,6 @@
   }
   .BreadCrumb__CurrentPage {
     font-size: 1.5rem;
-  }
-  .footer {
-    height: 100px;
   }
   .copyright {
     font-size: 1.1rem;
@@ -916,23 +1139,8 @@
   }
   /* --------------------------------
    * Responsive activity section
+     No Change was made
    * -------------------------------- */
-  .activitiy {
-    background-color: #EDE7CF;
-  }
-  .ActivityCard {
-    width: 100%;
-  }
-  .ActivityCard:nth-of-type(1) {
-    margin-bottom: 110px;
-  }
-  .ActivityCard:nth-of-type(2) {
-    margin-bottom: 50px;
-  }
-  .ActivityCard__image {
-    width: 100%;
-    height: auto;
-  }
   /* --------------------------------
    * Responsive contact section
    * -------------------------------- */
@@ -946,74 +1154,6 @@
     width: 100%;
     padding-top: 100px;
   }
-  .LargeCard {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
-  }
-  .LargeCard__ChairPersonImage {
-    width: 100%;
-    height: auto;
-  }
-  .LargeCard::before {
-    font-size: 1.4rem;
-    width: 150px;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 30px;
-  }
-  .LargeCard::after {
-    top: 60px;
-  }
-  .LargeCard__DescriptionContainer {
-    width: 100%;
-    height: auto;
-    padding: 20px 40px;
-  }
-  .LargeCard__DescriptionContainer::before {
-    border-top: 15px solid #393F4C;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #393F4C;
-  }
-  .LargeCard__DescriptionContainer::after {
-    border-top: 15px solid transparent;
-    border-right: 15px solid #393F4C;
-    border-bottom: 15px solid #393F4C;
-    border-left: 15px solid transparent;
-  }
-  .SmallCard {
-    width: 100%;
-  }
-  .SmallCard::before {
-    font-size: 1.4rem;
-    width: 150px;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 30px;
-  }
-  .SmallCard::after {
-    top: 60px;
-  }
-  .SmallCard__image {
-    width: 100%;
-    height: auto;
-  }
-  .SmallCard:nth-of-type(2) {
-    margin-bottom: 50px;
-  }
-  .SmallCard__DescriptionContainer::before {
-    border-top: 15px solid #836D1F;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #836D1F;
-  }
-  .SmallCard__DescriptionContainer::after {
-    border-top: 15px solid transparent;
-    border-right: 15px solid #836D1F;
-    border-bottom: 15px solid #836D1F;
-    border-left: 15px solid transparent;
-  }
   /* --------------------------------
    * Responsive blog section
    * -------------------------------- */
@@ -1021,80 +1161,12 @@
     width: 100%;
     padding-top: 100px;
   }
-  .wrapper {
-    width: 90%;
-  }
-  .main {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .BlogContainer::after {
-    width: 100%;
-  }
-  .BlogContainer__BlogTitle {
-    font-size: 1.8rem;
-    padding: 0 30px;
-  }
-  .BlogContainer__image {
-    width: 100%;
-  }
-  .BlogContainer__description {
-    padding: 20px;
-  }
-  .SideMenu {
-    width: 90%;
-    margin: auto;
-  }
-  .SideMenuContainer__title {
-    width: 100%;
-  }
   /* --------------------------------
    * Responsive question section
    * -------------------------------- */
   .question {
     width: 100%;
     padding-top: 100px;
-  }
-  .QuestionContainer {
-    width: 90%;
-    margin: 0 auto 30px;
-  }
-  .QuestionContainer__QuestionBox::before {
-    width: 25px;
-    height: 25px;
-  }
-  .QuestionContainer__QuestionBox::after {
-    margin: 5px 0 10px;
-  }
-  .QuestionContainer__question {
-    height: 25px;
-    line-height: 25px;
-    font-size: 1.4rem;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .QuestionContainer__AnswerContainer {
-    height: 30px;
-    padding-top: 5px;
-  }
-  .QuestionContainer__answer {
-    font-size: 1.4rem;
-    padding-left: 30px;
-    line-height: 1.2;
-  }
-  .QuestionContainer__answer::before {
-    width: 25px;
-    height: 22px;
-  }
-  .QuestionContainer__PlusMinusButton {
-    width: 20px;
-    height: 20px;
-  }
-  .QuestionContainer__PlusMinusButton::before {
-    width: 30px;
-  }
-  .QuestionContainer__PlusMinusButton::after {
-    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
