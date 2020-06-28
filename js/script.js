@@ -53,7 +53,22 @@ $(function(){
     var href= $(this).attr("href");
     var target = $(href);
     var position = target.offset().top - headerHeight;
-    $('body,html').stop().animate({scrollTop:position}, 1500);   
+	$('body,html').stop().animate({scrollTop:position}, 1500);
+	$('body').removeClass('ScrollLock'); /*I added this to prevent body from being fixed when the same page jump on Overlay menu is executed*/   
+	});
+	/*
+	Overaly Closes when the link button for the same page is pressed
+	*/
+	$('.OverlayNav__item').on('click',function(){
+		$('.OverlayNav').stop(true).animate({
+			'left': '-120%'
+		},500);
+		if($('body').hasClass(ScrollLock)){
+			$('.OverlayNav').removeClass('active');
+			$('body').removeClass('ScrollLock');
+		}else{
+			;
+		}
 	});
 	/*
 	Accordion Menu
