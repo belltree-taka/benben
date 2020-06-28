@@ -764,8 +764,8 @@
   ::-webkit-scrollbar {
     width: 0;
   }
-  .header {
-    padding: env(safe-area-inset-left);
+  .HeaderContainer {
+    width: 90%;
   }
   .SectionContainer {
     width: 90%;
@@ -780,7 +780,7 @@
     margin: -50px auto 0;
   }
   .BreadCrumb {
-    padding-left: 30px;
+    padding-left: 50px;
     width: 100%;
   }
   .BackToTopButton__icon {
@@ -788,6 +788,7 @@
   }
   .footer {
     height: 120px;
+    padding-right: 50px;
   }
   .copyright {
     font-size: 1.3rem;
