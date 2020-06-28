@@ -644,6 +644,7 @@
 }
 /* --------------------------------
  * Responive Break Point(1150px)
+ * This breakpoint is only for blog section
  * -------------------------------- */
  @media (max-width: 1150px) {
  .wrapper{
@@ -674,6 +675,7 @@
 }
 /* --------------------------------
  * Responive Break Point(1000px)
+ * Common
  * -------------------------------- */
  @media (max-width: 1000px){
   ::-webkit-scrollbar{
@@ -1075,7 +1077,8 @@
     }
   }
   /* --------------------------------
-   * Responsive about section
+   * Responive Break Point(768px)
+   * about section
    * -------------------------------- */
   .about{
     width: 100%;
@@ -1083,11 +1086,12 @@
   }
   /* --------------------------------
    * Responsive activity section
-     No Change was made
+   * No Change was made
    * -------------------------------- */
   
   /* --------------------------------
-   * Responsive contact section
+   * Responive Break Point(768px)
+   * contact section
    * -------------------------------- */
    .SectionContainer{
     &__GoogleMap{
@@ -1095,14 +1099,16 @@
     }
   }
   /* --------------------------------
-   * Responsive staff section
+   * Responive Break Point(768px)
+   * staff section
    * -------------------------------- */
   .staff{
     width: 100%;
     padding-top: 100px;
   }
   /* --------------------------------
-   * Responsive blog section
+   * RResponive Break Point(768px)
+   * blog section
    * -------------------------------- */
   .blog{
     width: 100%;
@@ -1110,7 +1116,8 @@
   }
   
   /* --------------------------------
-   * Responsive question section
+   * Responive Break Point(768px)
+   * question section
    * -------------------------------- */
   .question{
     width: 100%;
