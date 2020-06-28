@@ -338,7 +338,9 @@ body.fixed {
 .footer {
   width: 100%;
   height: 200px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   padding-right: calc(env(safe-area-inset-right));
   padding-bottom: calc(env(safe-area-inset-bottom));
   background-color: #393F4C;
