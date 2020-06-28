@@ -340,6 +340,7 @@ body.fixed {
   height: 200px;
   padding: 20px;
   padding-right: calc(env(safe-area-inset-right));
+  padding-bottom: calc(env(safe-area-inset-bottom));
   background-color: #393F4C;
   position: relative;
 }
