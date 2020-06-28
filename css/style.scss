@@ -680,7 +680,7 @@
     width: 0;
    }
    .header{
-     padding: env(safe-area-inset-left);
+     padding-left: 100px;
    }
    .SectionContainer{
     width: 90%;
@@ -704,6 +704,7 @@
   
   .footer{
     height: 120px;
+    padding-right: 30px;
   }
   .copyright{
     font-size: 1.3rem;
