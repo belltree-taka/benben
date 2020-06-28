@@ -341,8 +341,8 @@ body.fixed {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  padding-right: calc(env(safe-area-inset-right));
-  padding-bottom: calc(env(safe-area-inset-bottom));
+  padding-right: calc(env(safe-area-inset-right) + 20px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 20px);
   background-color: #393F4C;
   position: relative;
 }
