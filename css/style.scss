@@ -679,6 +679,9 @@
   ::-webkit-scrollbar{
     width: 0;
    }
+   .header{
+     padding: env(safe-area-inset-left);
+   }
    .SectionContainer{
     width: 90%;
     margin: auto;
@@ -693,6 +696,7 @@
   }
   .BreadCrumb {
     padding-left: 30px;
+    width: 100%;
   }
   .BackToTopButton__icon {
     font-size: 7rem;
