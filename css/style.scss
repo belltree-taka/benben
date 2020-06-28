@@ -698,6 +698,27 @@
     padding-left: 50px;
     width: 100%;
   }
+  .MainVisualContainer{
+    max-width: 100%;
+    height: 400px;
+    &__MainVisual{
+      margin-top: 70px;
+      height: 400px;
+    }
+  }
+  .TextBox{
+    width: 165px;
+    height: 100%;
+    margin-top: 70px;
+    left: 10%;
+    &__text{
+      font-size: 2.5rem;
+      letter-spacing: 8px;
+      &:nth-of-type(2){
+        top: 36%;
+      }
+    }
+  }
   .BackToTopButton {
     bottom: 120px;
     right: 5%;
@@ -925,6 +946,9 @@
     height: 45px;
     padding-left: 35px;
   }
+  .HeaderContainer{
+    width: 100%;
+  }
   .LogoTitle{
     font-size: 2rem;
     line-height: 45px;
@@ -943,7 +967,6 @@
     display: block;
   }
   .MainVisualContainer{
-    max-width: 100%;
     height: 250px;
     &__MainVisual{
       margin-top: 45px;
@@ -952,15 +975,10 @@
   }
   .TextBox{
     width: 87px;
-    height: 250px;
     margin-top: 45px;
-    left: 10%;
     &__text{
       font-size: 1.6rem;
       letter-spacing: 6px;
-      &:nth-of-type(2){
-        top: 36%;
-      }
     }
   }
   .BackToTopButton__icon {
