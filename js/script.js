@@ -54,7 +54,8 @@ $(function(){
     var target = $(href);
     var position = target.offset().top - headerHeight;
 	$('body,html').stop().animate({scrollTop:position}, 1500);
-	$('body').removeClass('ScrollLock'); /*I added this to prevent body from being fixed when the same page jump on Overlay menu is executed*/   
+	$('body').removeClass('ScrollLock');
+	$('.OverlayNav').removeClass('active'); /*I added this to prevent body from being fixed when the same page jump on Overlay menu is executed*/   
 	});
 	/*
 	Overaly Closes when the link button for the same page is pressed
