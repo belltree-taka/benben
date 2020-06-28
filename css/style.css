@@ -764,6 +764,9 @@
   ::-webkit-scrollbar {
     width: 0;
   }
+  .HeaderContainer {
+    width: 90%;
+  }
   .SectionContainer {
     width: 90%;
     margin: auto;
@@ -779,6 +782,10 @@
   .BreadCrumb {
     padding-left: 50px;
     width: 100%;
+  }
+  .BackToTopButton {
+    bottom: 120px;
+    right: 5%;
   }
   .BackToTopButton__icon {
     font-size: 7rem;
@@ -1032,10 +1039,6 @@
   }
   .TextBox__text:nth-of-type(2) {
     top: 36%;
-  }
-  .BackToTopButton {
-    bottom: 120px;
-    right: 5%;
   }
   .BackToTopButton__icon {
     font-size: 5rem;
