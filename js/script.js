@@ -86,7 +86,7 @@ $(function(){
 		}
 	});
 	/*
-	Overlay Nav
+	Overlay Nav Open and Close function
 	*/
 	$('.HamBurgerIconContainer').on('click', function(){	
 		$('.OverlayNav').stop(true).animate({
