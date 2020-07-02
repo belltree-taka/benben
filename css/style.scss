@@ -678,12 +678,22 @@
  * Common
  * -------------------------------- */
  @media (max-width: 1000px){
-   html{
-     font-size: 50%;
-   }
   ::-webkit-scrollbar{
     width: 0;
    }
+   .SectionTitle{
+     font-size: 2.5rem;
+   }
+   .DescriptionTitle{
+     font-size: 2rem;
+     &::after{
+      margin-top: 6px;
+      width: 150px;
+    }
+   }
+   .description{
+    font-size: 1.4rem;
+  }
    .HeaderContainer{
      width: 90%;
    }
@@ -717,7 +727,7 @@
     margin-top: 70px;
     left: 10%;
     &__text{
-      font-size: 3rem;
+      font-size: 2.5rem;
       letter-spacing: 8px;
       &:nth-of-type(2){
         top: 36%;
@@ -736,7 +746,7 @@
     padding-right: 50px;
   }
   .copyright{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     top: 70%;
   }
   /* --------------------------------
@@ -926,9 +936,6 @@
  * Common
  * -------------------------------- */
  @media (max-width: 768px) {
-   html{
-     font-size: 10px;
-   }   
    section{
     padding: 50px 0 25px;
    }
@@ -946,9 +953,6 @@
       margin-top: 6px;
       width: 100px;
     }
-  }
-  .description{
-    font-size: 1.4rem;
   }
   .header{
     height: 45px;

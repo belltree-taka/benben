@@ -763,11 +763,21 @@
  * Common
  * -------------------------------- */
 @media (max-width: 1000px) {
-  html {
-    font-size: 50%;
-  }
   ::-webkit-scrollbar {
     width: 0;
+  }
+  .SectionTitle {
+    font-size: 2.5rem;
+  }
+  .DescriptionTitle {
+    font-size: 2rem;
+  }
+  .DescriptionTitle::after {
+    margin-top: 6px;
+    width: 150px;
+  }
+  .description {
+    font-size: 1.4rem;
   }
   .HeaderContainer {
     width: 90%;
@@ -803,7 +813,7 @@
     left: 10%;
   }
   .TextBox__text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 8px;
   }
   .TextBox__text:nth-of-type(2) {
@@ -821,7 +831,7 @@
     padding-right: 50px;
   }
   .copyright {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     top: 70%;
   }
   /* --------------------------------
@@ -1021,9 +1031,6 @@
   .DescriptionTitle::after {
     margin-top: 6px;
     width: 100px;
-  }
-  .description {
-    font-size: 1.4rem;
   }
   .header {
     height: 45px;
