@@ -678,6 +678,9 @@
  * Common
  * -------------------------------- */
  @media (max-width: 1000px){
+   html{
+     font-size: 50%;
+   }
   ::-webkit-scrollbar{
     width: 0;
    }
@@ -714,7 +717,7 @@
     margin-top: 70px;
     left: 10%;
     &__text{
-      font-size: 2.5rem;
+      font-size: 3rem;
       letter-spacing: 8px;
       &:nth-of-type(2){
         top: 36%;
@@ -733,7 +736,7 @@
     padding-right: 50px;
   }
   .copyright{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     top: 70%;
   }
   /* --------------------------------
