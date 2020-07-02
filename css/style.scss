@@ -925,7 +925,10 @@
  * Responive Break Point(768px)
  * Common
  * -------------------------------- */
- @media (max-width: 768px) {   
+ @media (max-width: 768px) {
+   html{
+     font-size: 10px;
+   }   
    section{
     padding: 50px 0 25px;
    }
